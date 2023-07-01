@@ -17,7 +17,7 @@ class CounterCubit extends Cubit<int> {
   }
 
   void decrement() {
-    if (state > 0) {
+    if (state > -15) {
       emit(state - 1);
     } else {
       Fluttertoast.showToast(
